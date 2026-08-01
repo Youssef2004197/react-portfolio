@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg-deep text-ink-primary font-serif antialiased;
+    background-image: radial-gradient(circle at 15% 10%, rgba(109, 131, 245, 0.12) 0%, transparent 45%),
+      radial-gradient(circle at 85% 60%, rgba(109, 131, 245, 0.08) 0%, transparent 40%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: rgba(109, 131, 245, 0.35);
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid #8b9cf7;
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .kicker {
+    @apply flex items-center gap-3 justify-center mb-3 text-accent-soft text-sm tracking-[0.2em] uppercase;
+  }
+
+  .kicker::before,
+  .kicker::after {
+    content: "";
+    @apply h-px w-8 bg-accent/40;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl text-center mb-2;
+  }
+
+  .card {
+    @apply bg-bg-surface border border-line rounded-xl2 shadow-card transition-all duration-300;
+  }
+
+  .card:hover {
+    @apply -translate-y-1 border-accent/30;
+    box-shadow: 0 0 40px -10px rgba(109, 131, 245, 0.35), 0 10px 30px -12px rgba(0, 0, 0, 0.5);
+  }
+}
