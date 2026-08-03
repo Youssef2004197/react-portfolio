@@ -6,6 +6,8 @@ const CERTIFICATES = [
   { img: "/assets/RH.png", title: "Nexus RH Certification", issuer: "Nexus it club — 2026" },
   { img: "/assets/video.jpg", title: "Video Editing Certification", issuer: "Nexus it club — 2026" },
   { img: "/assets/xtreme.jpg", title: "Xtreme Certification", issuer: "IEEE — 2025" },
+  { img: "/assets/ambassadors.jpg", title: "Ambassador Certification", issuer: "Google Developer Group — 2026" },
+  { img: "/assets/OCteam.jpg", title: "OC TEAM Certification", issuer: "Google Developer Group — 2026" },
 ];
 
 export default function Certificates({ onOpen }) {
