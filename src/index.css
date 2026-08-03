@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --c-bg-deep: 248 249 252;
+  --c-bg-deep: 224 234 250;
   --c-bg-surface: 255 255 255;
-  --c-bg-surface2: 241 243 249;
+  --c-bg-surface2: 236 243 253;
   --c-accent: 79 70 229;
   --c-accent-soft: 99 102 241;
-  --c-ink-primary: 17 20 30;
-  --c-ink-muted: 71 78 94;
-  --c-ink-faint: 120 128 143;
-  --c-line: 15 20 30;
-  --c-line-a: 0.1;
-  --glow-a: rgba(79, 70, 229, 0.08);
-  --glow-b: rgba(79, 70, 229, 0.05);
+  --c-ink-primary: 17 24 39;
+  --c-ink-muted: 71 85 105;
+  --c-ink-faint: 100 116 139;
+  --c-line: 30 58 138;
+  --c-line-a: 0.12;
+  --glow-a: rgba(79, 70, 229, 0.1);
+  --glow-b: rgba(59, 130, 246, 0.12);
 }
 
 .dark {
@@ -39,9 +39,15 @@
 
   body {
     @apply bg-bg-deep text-ink-primary font-serif antialiased transition-colors duration-300;
-    background-image: radial-gradient(circle at 15% 10%, var(--glow-a) 0%, transparent 45%),
+    background-image: linear-gradient(135deg, #dbe8fb, #eef4fd),
+      radial-gradient(circle at 15% 10%, var(--glow-a) 0%, transparent 45%),
       radial-gradient(circle at 85% 60%, var(--glow-b) 0%, transparent 40%);
     background-attachment: fixed;
+  }
+
+  .dark body {
+    background-image: radial-gradient(circle at 15% 10%, var(--glow-a) 0%, transparent 45%),
+      radial-gradient(circle at 85% 60%, var(--glow-b) 0%, transparent 40%);
   }
 
   ::selection {
