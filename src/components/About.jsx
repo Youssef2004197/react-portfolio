@@ -28,7 +28,7 @@ export default function About() {
             contribute to real projects.
           </p>
 
-          <div className="flex flex-wrap justify-center md:justify-start gap-3 mt-8">
+          <div className="flex flex-wrap justify-center gap-3 mt-8">
             {SKILLS.map((skill) => (
               <span
                 key={skill}
@@ -39,7 +39,7 @@ export default function About() {
             ))}
           </div>
 
-          <div className="mt-8 flex justify-center md:justify-start">
+          <div className="mt-8 flex justify-center">
             <a
               href="/assets/cv.pdf"
               download
