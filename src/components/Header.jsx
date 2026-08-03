@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const LINKS = [
   { href: "#hero", label: "Home" },
@@ -44,7 +45,7 @@ export default function Header() {
           />
         </button>
 
-        <nav className="hidden md:flex ml-auto gap-10">
+        <nav className="hidden md:flex ml-auto items-center gap-10">
           {LINKS.map((link) => (
             <a
               key={link.href}
@@ -54,6 +55,7 @@ export default function Header() {
               {link.label}
             </a>
           ))}
+          <ThemeToggle />
         </nav>
       </div>
 

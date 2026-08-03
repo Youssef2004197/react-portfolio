@@ -2,15 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --c-bg-deep: 248 249 252;
+  --c-bg-surface: 255 255 255;
+  --c-bg-surface2: 241 243 249;
+  --c-accent: 79 70 229;
+  --c-accent-soft: 99 102 241;
+  --c-ink-primary: 17 20 30;
+  --c-ink-muted: 71 78 94;
+  --c-ink-faint: 120 128 143;
+  --c-line: 15 20 30;
+  --c-line-a: 0.1;
+  --glow-a: rgba(79, 70, 229, 0.08);
+  --glow-b: rgba(79, 70, 229, 0.05);
+}
+
+.dark {
+  --c-bg-deep: 11 15 26;
+  --c-bg-surface: 19 24 38;
+  --c-bg-surface2: 23 29 46;
+  --c-accent: 109 131 245;
+  --c-accent-soft: 139 156 247;
+  --c-ink-primary: 245 246 250;
+  --c-ink-muted: 154 163 184;
+  --c-ink-faint: 107 114 128;
+  --c-line: 255 255 255;
+  --c-line-a: 0.08;
+  --glow-a: rgba(109, 131, 245, 0.12);
+  --glow-b: rgba(109, 131, 245, 0.08);
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-bg-deep text-ink-primary font-serif antialiased;
-    background-image: radial-gradient(circle at 15% 10%, rgba(109, 131, 245, 0.12) 0%, transparent 45%),
-      radial-gradient(circle at 85% 60%, rgba(109, 131, 245, 0.08) 0%, transparent 40%);
+    @apply bg-bg-deep text-ink-primary font-serif antialiased transition-colors duration-300;
+    background-image: radial-gradient(circle at 15% 10%, var(--glow-a) 0%, transparent 45%),
+      radial-gradient(circle at 85% 60%, var(--glow-b) 0%, transparent 40%);
     background-attachment: fixed;
   }
 

@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Youssef Rezgui — Business Intelligence student & aspiring web developer. Portfolio, projects, certificates and contact." />
     <title>Youssef Rezgui | Portfolio</title>
+    <script>
+      (function () {
+        var saved = localStorage.getItem("theme");
+        var isDark = saved ? saved === "dark" : true;
+        if (isDark) document.documentElement.classList.add("dark");
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
@@ -8,21 +9,21 @@ export default {
       },
       colors: {
         bg: {
-          deep: "#0b0f1a",
-          surface: "#131826",
-          surface2: "#171d2e",
+          deep: "rgb(var(--c-bg-deep) / <alpha-value>)",
+          surface: "rgb(var(--c-bg-surface) / <alpha-value>)",
+          surface2: "rgb(var(--c-bg-surface2) / <alpha-value>)",
         },
         accent: {
-          DEFAULT: "#6d83f5",
-          soft: "#8b9cf7",
-          dim: "rgba(109, 131, 245, 0.15)",
+          DEFAULT: "rgb(var(--c-accent) / <alpha-value>)",
+          soft: "rgb(var(--c-accent-soft) / <alpha-value>)",
+          dim: "rgb(var(--c-accent) / 0.15)",
         },
         ink: {
-          primary: "#f5f6fa",
-          muted: "#9aa3b8",
-          faint: "#6b7280",
+          primary: "rgb(var(--c-ink-primary) / <alpha-value>)",
+          muted: "rgb(var(--c-ink-muted) / <alpha-value>)",
+          faint: "rgb(var(--c-ink-faint) / <alpha-value>)",
         },
-        line: "rgba(255, 255, 255, 0.08)",
+        line: "rgb(var(--c-line) / var(--c-line-a))",
       },
       boxShadow: {
         glow: "0 0 40px -10px rgba(109, 131, 245, 0.35)",
