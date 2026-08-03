@@ -16,7 +16,7 @@ export default function Experience({ onOpen }) {
         <div className="text-center md:text-left">
           <div className="flex flex-wrap items-baseline justify-center md:justify-between gap-2 mb-1">
             <h3 className="text-2xl">Human Resources (HR) Officer</h3>
-            <span className="text-ink-muted text-sm">2025 – Present</span>
+            <span className="text-ink-muted text-sm">2025 – 2026</span>
           </div>
           <p className="italic text-ink-muted mb-5">
             Nexus IT Club – Faculty of Economic Sciences and Management of Tunis (FSEGT)
@@ -30,7 +30,7 @@ export default function Experience({ onOpen }) {
             communication, organization, and event management.
           </p>
           <p className="text-sm text-ink-faint">
-            Participation and training certificates are available on my LinkedIn profile.
+            Participation and training certificates are available on the Certification section.
           </p>
         </div>
       </div>
