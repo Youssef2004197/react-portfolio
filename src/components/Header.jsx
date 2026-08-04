@@ -74,6 +74,9 @@ export default function Header() {
               </li>
             ))}
           </ul>
+          <div className="pt-2">
+            <ThemeToggle />
+          </div>
         </nav>
       )}
     </header>
