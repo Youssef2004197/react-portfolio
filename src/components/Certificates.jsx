@@ -1,4 +1,5 @@
 const CERTIFICATES = [
+  { img: "/assets/introgenai.png", title: "Intro to Generative AI and agents", issuer: "Microsoft — 2026" },
   { img: "/assets/github.jpg", title: "Github Certification", issuer: "Nexus it club — 2025" },
   { img: "/assets/jobfair.png", title: "Job Fair Participation", issuer: "FSEGT — 2026" },
   { img: "/assets/n8n.png", title: "n8n Certification", issuer: "Enactus FSEGT — 2026" },
