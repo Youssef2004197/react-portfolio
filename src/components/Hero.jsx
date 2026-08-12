@@ -36,10 +36,10 @@ export default function Hero() {
           Hi, I'm Youssef Rezgui
         </h1>
         <p className="text-xl md:text-2xl text-accent-soft mb-5">
-          Business Intelligence Student | Aspiring Web Developer
+          Business Intelligence Student | Aspiring Web and Mobile Developer
         </p>
         <p className="text-base md:text-lg text-ink-muted leading-relaxed mb-8 max-w-md mx-auto md:mx-0">
-          I'm a 3rd-year Business Intelligence student passionate about web
+          I'm a 3rd-year Business Intelligence student passionate about web and mobile 
           development. Currently looking for an internship opportunity to
           grow my skills and contribute to real-world projects.
         </p>

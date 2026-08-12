@@ -1,4 +1,4 @@
-const SKILLS = ["HTML", "CSS", "JavaScript", "PHP", "Python", "Java", "C", "SQL", "NoSQL"];
+const SKILLS = ["HTML", "CSS", "JavaScript", "PHP", "Python", "Java", "C", "SQL", "NoSQL" ,"Dart" , "Flutter"];
 
 export default function About() {
   return (
