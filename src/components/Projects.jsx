@@ -30,7 +30,7 @@ export default function Projects() {
 
       <h2 className="section-title mb-12">Projects</h2>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center gap-4">
         <div className="card rounded-xl2 p-5 w-full max-w-[320px]">
           
           {/* Project Image */}
