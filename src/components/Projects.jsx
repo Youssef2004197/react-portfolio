@@ -173,6 +173,53 @@ export default function Projects() {
             </div>
           </div>
         </div>
+        <div className="flex flex-wrap gap-6">
+          {/* Project 1: PDF Chatbot */}
+          <div className="card rounded-xl2 p-5 w-full max-w-[320px]">
+            <div className="w-full h-44 rounded-lg overflow-hidden bg-bg-surface2 mb-4">
+              <img
+                src="/assets/chatbotpic.jpg"
+                alt="PDF Chatbot"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-xl mb-2">PDF Chatbot</h3>
+            <p className="text-sm text-ink-muted mb-4">
+              A chatbot that reads your PDF documents and answers your questions about their content.
+            </p>
+            <a
+              href="https://github.com/Youssef2004197/first_chabot"
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-white text-black hover:bg-transparent hover:text-white transition-all"
+            >
+              <GithubIcon />
+            </a>
+          </div>
+
+          {/* Project 2: Titanic ML Model */}
+          <div className="card rounded-xl2 p-5 w-full max-w-[320px]">
+            <div className="w-full h-44 rounded-lg overflow-hidden bg-bg-surface2 mb-4">
+              <img
+                src="/assets/MLprojectpic.png"
+                alt="Titanic Survival Prediction"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-xl mb-2">Titanic Survival Prediction</h3>
+            <p className="text-sm text-ink-muted mb-4">
+              A machine learning model trained on the Titanic dataset to predict passenger survival.
+            </p>
+            <a
+              href="https://github.com/Youssef2004197/first_machine_learning_project"
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-white text-black hover:bg-transparent hover:text-white transition-all"
+            >
+              <GithubIcon />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
